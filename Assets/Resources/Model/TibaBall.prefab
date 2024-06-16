@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6710512975140471246}
   - component: {fileID: 3811616101544769937}
   - component: {fileID: 227827149372310760}
+  - component: {fileID: 6108312137994282794}
   m_Layer: 0
   m_Name: TibaBall
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.9922, y: -0.9922, z: 0}
-  m_LocalScale: {x: 0.6031, y: 0.6031, z: 0.6031}
+  m_LocalScale: {x: 0.9980904, y: 0.9980904, z: 0.9980904}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -148,3 +149,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!114 &6108312137994282794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2613419659175658223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de15f685e50afd540a5efb6db1ea3e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rank: 4
+  ballMaster: {fileID: 0}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5007585950152437438}
   - component: {fileID: 8557707461776031064}
   - component: {fileID: 4014511552872400874}
+  - component: {fileID: 8854493710069703410}
   m_Layer: 0
   m_Name: ReactBall
   m_TagString: Untagged
@@ -148,3 +149,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!114 &8854493710069703410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3884298202654987908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de15f685e50afd540a5efb6db1ea3e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rank: 2
+  ballMaster: {fileID: 0}
