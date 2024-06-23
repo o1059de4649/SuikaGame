@@ -39,7 +39,7 @@ public class PlayerActionController : MonoBehaviour
     public GameObject selectRandomBall()
     {
         var balls = ballMaster.Balls;
-        var result = balls[Random.Range(0, balls.Count - 4)];
+        var result = balls[Random.Range(0, balls.Count - 3)];
         return result;
     }
 
