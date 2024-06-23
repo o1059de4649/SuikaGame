@@ -39,7 +39,7 @@ public class PlayerActionController : MonoBehaviour
     public GameObject selectRandomBall()
     {
         var balls = ballMaster.Balls;
-        var result = balls[Random.Range(0, balls.Count - 1)];
+        var result = balls[Random.Range(0, balls.Count - 4)];
         return result;
     }
 
@@ -60,7 +60,7 @@ public class PlayerActionController : MonoBehaviour
 
         //ボールを解き放つ
         var obj = Instantiate(ball, mousePosition, Quaternion.identity);
-        obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, -5);
+        obj.transform.position = new Vector3(obj.transform.position.x, 4, -5);
         //名前を同じ名前にする
         obj.name = obj.name.Replace("(Clone)", "");
         //ボール再設定
