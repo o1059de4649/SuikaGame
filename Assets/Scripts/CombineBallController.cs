@@ -10,6 +10,9 @@ public class CombineBallController : MonoBehaviour
     public int rank;
     public BallMaster ballMaster;
     public GameObject ballMasterObj;
+    public AudioClip hitSE;
+    public AudioClip explosionSE;
+    public AudioSource audioSource; 
     // Start is called before the first frame update
     void Start()
     {
@@ -56,11 +59,22 @@ public class CombineBallController : MonoBehaviour
                     var obj = Instantiate(nextBall, this.gameObject.transform.position, Quaternion.identity);
                     //名前を同じ名前にする
                     obj.name = obj.name.Replace("(Clone)", "");
+                    // 作られたボール側で効果音を再生
+                    obj.GetComponent<AudioSource>().PlayOneShot(hitSE);
                 }
             }
-
+            else
+            {
+                //爆発音を出す
+                this.GetComponent<AudioSource>().PlayOneShot(explosionSE);
+            }
+            //消えたように見せる
+            var spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            spriteRenderer.enabled = false;
+            var collider2D = gameObject.GetComponent<Collider2D>();
+            collider2D.enabled = false;
             //消える。
-            Destroy(this.gameObject);
+            Destroy(this.gameObject,1);
         }
     }
 }
