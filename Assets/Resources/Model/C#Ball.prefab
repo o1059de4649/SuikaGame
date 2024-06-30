@@ -166,6 +166,7 @@ MonoBehaviour:
   ballMaster: {fileID: 0}
   ballMasterObj: {fileID: 0}
   hitSE: {fileID: 8300000, guid: 07e1db2f8558aee49bb730459c0b2b70, type: 3}
+  explosionSE: {fileID: 0}
   audioSource: {fileID: 0}
 --- !u!82 &6186454652213329571
 AudioSource:
@@ -179,7 +180,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
