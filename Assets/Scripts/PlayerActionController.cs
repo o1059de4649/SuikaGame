@@ -78,7 +78,7 @@ public class PlayerActionController : MonoBehaviour
             //ボールが同じ名前の画像があれば、それは表示とする。
             if (ball.transform.gameObject.name.Equals(playerBall.transform.gameObject.name)) {
                 ball.SetActive(true);
-            }
+            }       
         }
     }
 

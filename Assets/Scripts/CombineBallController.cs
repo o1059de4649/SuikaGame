@@ -44,12 +44,12 @@ public class CombineBallController : MonoBehaviour
 
             Debug.Log("ぶつかってきた方" + collision.transform.position.y);
             Debug.Log("ぶつかられた方" + this.gameObject.transform.position.y);
+            //次のランクレベル
+            int nextRank = rank + 1;
 
             //Y軸で片方を判定する(自分のほうが低い場合)
             if (collision.transform.position.y >= this.gameObject.transform.position.y) {
                 
-                //次のランクレベル
-                int nextRank = rank + 1;
 
                 //★次のランクのボールがない場合は実行しない。
                 if (nextRank < ballMaster.Balls.Count)
@@ -73,6 +73,8 @@ public class CombineBallController : MonoBehaviour
             spriteRenderer.enabled = false;
             var collider2D = gameObject.GetComponent<Collider2D>();
             collider2D.enabled = false;
+            //スコア追加
+            GameMaster.score += nextRank * 10;
             //消える。
             Destroy(this.gameObject,1);
         }
