@@ -6,5 +6,5 @@ using UnityEngine.UI;
 public static class GameMaster
 {
     public static int score = 0;
-    public static float max_time = 1200;
+    public static float max_time = 600;
 }

@@ -4850,7 +4850,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1193666753}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1622683430}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: RetryExecute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1193666753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5774,6 +5786,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1622683430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4712600266631004667, guid: 0aacbeed0855c9547a7d0705e9b6c381, type: 3}
+  m_PrefabInstance: {fileID: 547041043182836799}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a58c8a692129a46901433071ec3396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1668681574
 GameObject:
   m_ObjectHideFlags: 0
@@ -7282,6 +7305,10 @@ PrefabInstance:
       propertyPath: retryButton
       value: 
       objectReference: {fileID: 1193666750}
+    - target: {fileID: 4712600266631004667, guid: 0aacbeed0855c9547a7d0705e9b6c381, type: 3}
+      propertyPath: uiController
+      value: 
+      objectReference: {fileID: 2123516015}
     - target: {fileID: 5821427563744356996, guid: 0aacbeed0855c9547a7d0705e9b6c381, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

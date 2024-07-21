@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -13,6 +14,7 @@ public class GameController : MonoBehaviour
     /// ゲームオーバーかどうか
     /// </summary>
     public bool gameOver = false;
+    public UIController uiController;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,14 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (uiController.now_time < 0)
+        {
+            gameOver = true;
+        }
+        if (gameOver)
+        {
+            retryButton.SetActive(true);
+        }      
     }
 
     /// <summary>
@@ -30,6 +39,6 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void RetryExecute()
     {
-        
+        SceneManager.LoadScene("Scenes/PlayGameScene");
     }
 }
