@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     public Text score_text;
     public Text time_text;
     public float now_time = 0;
+    
     void Start()
     {
         now_time = GameMaster.max_time;

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5821427563744356996}
   - component: {fileID: 5011643876468735858}
+  - component: {fileID: 4712600266631004667}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -50,3 +51,17 @@ MonoBehaviour:
   - {fileID: 3884298202654987908, guid: 3611993891c04954290a8211912721f4, type: 3}
   - {fileID: 3847680546023878485, guid: 0182590ab628c4c4b9e9bdca517e309d, type: 3}
   - {fileID: 2613419659175658223, guid: 4dfb72bedb30c8d4680131807ba45f00, type: 3}
+--- !u!114 &4712600266631004667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3227374516216105700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a58c8a692129a46901433071ec3396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  retryButton: {fileID: 0}
+  gameOver: 0
