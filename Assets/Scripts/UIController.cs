@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,16 +8,21 @@ public class UIController : MonoBehaviour
 {
     public Text score_text;
     public Text time_text;
-    // Start is called before the first frame update
+    public float now_time = 0;
     void Start()
     {
-        
+        now_time = GameMaster.max_time;
     }
 
-    // Update is called once per frame
     void Update()
     {
         score_text.text = "ScoreÅF" + GameMaster.score.ToString();
-        time_text.text =  GameMaster.time.ToString();
+        time_text.text = Math.Floor(now_time).ToString();
+        CountTime();
+    }
+
+    void CountTime()
+    {
+        now_timeÅ@-= Time.deltaTime;
     }
 }
