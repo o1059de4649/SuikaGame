@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using Unity.Burst.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerActionController : MonoBehaviour
 {
+    public float balltime = 0;
     private GameObject _playerBall;
     public GameObject playerBall { 
        get { return _playerBall; }
@@ -26,9 +28,14 @@ public class PlayerActionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        balltime += Time.deltaTime;
+        if (balltime < 1) {
+            return;
+        }
         //¶ƒNƒŠƒbƒN‚Å”­ŽË
         if (Input.GetMouseButtonDown(0)) {
             Shot(playerBall);
+            balltime = 0;
         }
     }
 
